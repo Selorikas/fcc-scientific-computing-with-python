@@ -27,7 +27,7 @@ def experiment(hat, expected_balls, num_balls_drawn, num_experiments):
     for index in expected_balls:
         expected.append(expected_balls[index])
 
-        # perform N random experiments and check whether the assortment of this experiment corresponds to the expected assortment
+    # perform N random experiments and check whether the assortment of this experiment corresponds to the expected assortment
     successes = 0
     for _ in range(num_experiments):
         new_hat = copy.deepcopy(hat)
